@@ -1,5 +1,5 @@
 <template>
-  <section class="post-list">
+  <v-container class="post-list">
     <ul class="post-list__list">
       <li
         class="post-list__item"
@@ -18,7 +18,7 @@
       :length="pagesCount"
       color="rgba(22, 24, 35, 0.75)"
     ></v-pagination>
-  </section>
+  </v-container>
 </template>
 
 <script>

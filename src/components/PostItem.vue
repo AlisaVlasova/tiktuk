@@ -1,5 +1,5 @@
 <template>
-  <div class="post">
+  <v-container class="post">
     <router-link :to="`/profile/${post.authorMeta.name}`">
       <v-avatar class="post__avatar">
         <img :src="post.authorMeta.avatar" :alt="post.authorMeta.nickName" />
@@ -33,7 +33,7 @@
 
       <div class="post__video-container">
         <div class="post__video">
-          <video :ref="post.id" playsinline controls loop muted>
+          <video :ref="post.id" controls loop muted>
             <source :src="post.videoUrl" type="video/mp4" />
           </video>
         </div>
@@ -60,7 +60,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </v-container>
 </template>
 
 <script>
@@ -68,6 +68,7 @@ export default {
   name: "Post",
   props: ["post"],
   methods: {
+    // Tracking scroll position of the video
     getElementVisible(id) {
       const target = document.getElementById(id);
 
@@ -91,6 +92,7 @@ export default {
         targetPosition.left < windowPosition.right
       );
     },
+    // Autoplay visible video
     play() {
       if (this.getElementVisible(this.post.id)) {
         this.$refs[this.post.id].play();
@@ -111,13 +113,21 @@ export default {
 <style lang="scss" scoped>
 .post {
   display: flex;
+  flex-direction: column;
+
+  max-width: 600px;
 
   padding: 24px 0;
+  margin: 0 auto;
 
   border-bottom: 1px solid rgba(22, 24, 35, 0.2);
 
-  @media screen and (max-width: 768px) {
-    flex-direction: column;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
+
+  @media screen and (min-width: 1600px) {
+    width: 800px;
   }
 
   &__avatar {
@@ -125,12 +135,12 @@ export default {
     max-width: 55px;
     height: 55px;
 
-    margin-right: 16px;
+    margin: 0 0 8px 0;
 
     border-radius: 50%;
 
-    @media screen and (max-width: 768px) {
-      margin: 0 0 8px 0;
+    @media screen and (min-width: 768px) {
+      margin: 0 16px 0 0;
     }
   }
 
@@ -165,10 +175,10 @@ export default {
   }
 
   &__side-bar {
-    margin-left: 24px;
+    margin-left: 16px;
 
-    @media screen and (max-width: 768px) {
-      margin-left: 16px;
+    @media screen and (min-width: 768px) {
+      margin-left: 24px;
     }
   }
 
@@ -193,8 +203,8 @@ export default {
     align-items: center;
     justify-content: center;
 
-    width: 48px;
-    height: 48px;
+    width: 38px;
+    height: 38px;
 
     margin-bottom: 8px;
 
@@ -202,16 +212,22 @@ export default {
 
     border-radius: 50%;
 
-    @media screen and (max-width: 768px) {
-      width: 38px;
-      height: 38px;
+    @media screen and (min-width: 768px) {
+      width: 48px;
+      height: 48px;
     }
   }
 
   &__video {
     position: relative;
 
-    max-width: 400px;
+    @media screen and (min-width: 768px) {
+      max-width: 300px;
+    }
+
+    @media screen and (min-width: 1600px) {
+      max-width: 400px;
+    }
   }
 
   video,

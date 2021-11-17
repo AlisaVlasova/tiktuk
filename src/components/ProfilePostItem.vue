@@ -4,25 +4,20 @@
     height="500px"
     :title="post.desc"
   >
-    <!-- <video
-      playsinline
-      controls
-      loop
-    >
-      <source :src="post.video.playAddr" type="video/mp4">
-    </video> -->
+    <!-- Use post.video.playAddr when Get User Feed works... -->
 
     <video playsinline controls loop>
       <source :src="post.videoUrl" type="video/mp4" />
     </video>
-
-    <!-- <img :src="post.video.cover" :alt="post.desc"> -->
 
     <v-row class="post__top">
       <div class="post__play">
         <div class="post__icon">
           <v-icon>mdi-play</v-icon>
         </div>
+
+        <!-- Use {{ post.stats.playCont }} when Get User Feed works... -->
+
         {{ post.playCount }}
       </div>
     </v-row>

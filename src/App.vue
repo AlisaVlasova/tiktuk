@@ -15,7 +15,7 @@
       <span class="header-text"> a place for you to stick </span>
     </v-app-bar>
     <v-main fluid>
-      <v-container>
+      <v-container class="content">
         <router-view></router-view>
       </v-container>
     </v-main>

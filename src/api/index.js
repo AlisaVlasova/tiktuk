@@ -1,6 +1,9 @@
 const BASE_URL = "https://tiktok33.p.rapidapi.com/";
 const TF_URL = BASE_URL + "trending/feed";
+
+// Uncomment next row when Get User Feed works proparly
 // const UF_URL = BASE_URL + "user/feed/";
+
 const UI_URL = BASE_URL + "user/info/";
 
 const defaultOptions = {
@@ -31,7 +34,10 @@ export const getTrendingFeedData = async () => {
 };
 
 export const getUserFeedData = async (name) => {
+  // Uncomment next row when Get User Feed works proparly...
   // return await getData(UF_URL + name, defaultOptions);
+
+  // ...and remove nex row
   const arr = await getTrendingFeedData();
 
   return arr.filter((item) => item.authorMeta.name === name);
