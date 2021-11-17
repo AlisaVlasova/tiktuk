@@ -83,6 +83,7 @@ Ss here I am!
 - Videos can't be autoplayable before user interracts the document
     That's why videos on home page are muted
 
+
 ## Project setup
 ```
 npm install
