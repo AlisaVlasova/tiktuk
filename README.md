@@ -21,7 +21,7 @@ https://alisavlasova.github.io/tiktuk/#/
 
 Ss here I am!
 
-![Screenshot](img/screen.png);
+![Screenshot](/img/screen.png);
 
 ![Screenshot](img/screen-mob.png)
 
