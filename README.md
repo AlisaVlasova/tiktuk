@@ -21,7 +21,7 @@ https://alisavlasova.github.io/tiktuk/#/
 
 Ss here I am!
 
-![alt text](ihttps://github.com/AlisaVlasova/tiktuk/public/img/screen.png)
+![alt text](ihttps://github.com/AlisaVlasova/tiktuk/blob/maste/public/img/screen.png)
 
 ![Screenshot](img/screen.png);
 
