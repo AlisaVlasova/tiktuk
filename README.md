@@ -23,13 +23,11 @@ Ss here I am!
 
 ![alt text](https://github.com/AlisaVlasova/tiktuk/blob/master/public/img/screen.png)
 
-![Screenshot](img/screen.png);
+![alt text](https://github.com/AlisaVlasova/tiktuk/blob/master/public/img/screen-mob.png)
 
-![Screenshot](img/screen-mob.png)
+![alt text](https://github.com/AlisaVlasova/tiktuk/blob/master/public/img/profile.png)
 
-![Screenshot](img/profile.png)
-
-![Screenshot](img/profile-mob.png)
+![alt text](https://github.com/AlisaVlasova/tiktuk/blob/master/public/img/profile-mob.png)
 
 # What have I done ?
 
@@ -48,11 +46,11 @@ Ss here I am!
 - Videos can be paused by user using default controlls
 - Videos are muted and autoplayable on scroll
 
-![Screenshot](img/post.png)
+![alt text](https://github.com/AlisaVlasova/tiktuk/blob/master/public/img/post.png)
 
 - Also there is client-side pagination on home page
 
-![Screenshot](img/pagination.png)
+![alt text](https://github.com/AlisaVlasova/tiktuk/blob/master/public/img/pagination.png)
 
 - Collection Get User Info and Get User Feed on profile page
 - On profile page you can see: 
@@ -61,20 +59,23 @@ Ss here I am!
     this author's videos
     count of play and text on each video
 
-![Screenshot](img/profile-info.png)
-![Screenshot](img/profile-post.png)
+![alt text](https://github.com/AlisaVlasova/tiktuk/blob/master/public/img/profile-info.png)
+
+![alt text](https://github.com/AlisaVlasova/tiktuk/blob/master/public/img/profile-post.png)
 
 - Loader implemented for all request
 
-![Screenshot](img/loader.png)
+![alt text](https://github.com/AlisaVlasova/tiktuk/blob/master/public/img/loader.png)
 
 - Error handling for all requests
 
-![Screenshot](img/loader.png)
+![alt text](https://github.com/AlisaVlasova/tiktuk/blob/master/public/img/error.png)
+
 
 - To get back to home page click on header logo
 
-![Screenshot](img/header.png)
+![alt text](https://github.com/AlisaVlasova/tiktuk/blob/master/public/img/header.png)
+
 
 # Problems
 
