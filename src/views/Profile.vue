@@ -74,8 +74,6 @@ export default {
       } finally {
         this.isLoading = false;
       }
-
-      console.log(this.getUserFeed, this.getUserInfo);
     },
   },
   beforeMount() {

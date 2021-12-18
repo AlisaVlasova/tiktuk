@@ -4,9 +4,8 @@
     height="500px"
     :title="post.desc"
   >
-    <!-- Use post.video.playAddr when Get User Feed works... -->
-
     <video playsinline controls loop>
+      <!-- Use post.video.playAddr when Get User Feed works (if you don't know what is this about go to @/api) -->
       <source :src="post.videoUrl" type="video/mp4" />
     </video>
 
@@ -16,7 +15,7 @@
           <v-icon>mdi-play</v-icon>
         </div>
 
-        <!-- Use {{ post.stats.playCont }} when Get User Feed works... -->
+        <!-- Use {{ post.stats.playCont }} when Get User Feed works (if you don't know what is this about go to @/api) -->
 
         {{ post.playCount }}
       </div>

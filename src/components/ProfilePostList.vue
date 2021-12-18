@@ -1,9 +1,4 @@
 <template>
-  <!-- <ul class="post-list">
-    <li v-for="post of getUserFeed" :key="post.id">
-      <profile-post-item :post="post" />
-    </li>
-  </ul> -->
   <v-item-group>
     <v-container>
       <v-row>

@@ -46,8 +46,6 @@ export default {
       } finally {
         this.isLoading = false;
       }
-
-      console.log(this.getTrendingFeed);
     },
   },
   beforeMount() {

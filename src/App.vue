@@ -1,8 +1,5 @@
 <template>
   <v-app>
-    <!-- <v-navigation-drawer app>
-      
-    </v-navigation-drawer> -->
     <v-app-bar app>
       <router-link to="/">
         <div class="logo-icon">

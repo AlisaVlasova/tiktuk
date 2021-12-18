@@ -68,10 +68,8 @@ export default {
   name: "Post",
   props: ["post"],
   methods: {
-    // Tracking scroll position of the video
     getElementVisible(id) {
       const target = document.getElementById(id);
-
       const targetPosition = {
         top: window.pageYOffset + target.getBoundingClientRect().top,
         left: window.pageXOffset + target.getBoundingClientRect().left,
@@ -92,7 +90,6 @@ export default {
         targetPosition.left < windowPosition.right
       );
     },
-    // Autoplay visible video
     play() {
       if (this.getElementVisible(this.post.id)) {
         this.$refs[this.post.id].play();

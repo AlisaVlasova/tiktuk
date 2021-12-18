@@ -5,12 +5,10 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-    // data
     trendingFeed: null,
     userFeed: null,
     userInfo: null,
 
-    // pagination
     currentPage: 1,
     totalPages: null,
     pageSize: 10,
